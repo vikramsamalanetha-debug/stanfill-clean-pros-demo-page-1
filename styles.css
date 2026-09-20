@@ -256,11 +256,14 @@
     height: 100%;
     object-fit: cover;
     z-index: 0;
+    filter: brightness(0.55) saturate(0.9);
   }
   .hero-overlay{
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(20,26,20,0.25) 0%, rgba(15,20,15,0.78) 100%);
+    background:
+      linear-gradient(90deg, rgba(10,14,10,0.85) 0%, rgba(10,14,10,0.55) 45%, rgba(10,14,10,0.25) 75%),
+      linear-gradient(180deg, rgba(10,14,10,0.15) 0%, rgba(10,14,10,0.65) 100%);
     z-index: 0;
   }
   .hero-photo-content{
@@ -272,6 +275,7 @@
   .hero-eyebrow{
     color: var(--honey);
     text-align: left;
+    text-shadow: 0 1px 12px rgba(0,0,0,0.5);
   }
   .hero-photo-h1{
     font-family: 'Fraunces', serif;
@@ -279,6 +283,7 @@
     font-size: clamp(2.1rem, 4.4vw, 3.4rem);
     line-height: 1.15;
     font-weight: 600;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.55);
   }
   .hero-categories{
     color: #FFFFFF;
@@ -286,11 +291,13 @@
     letter-spacing: 0.02em;
     margin-top: 16px;
     font-size: 1.05rem;
+    text-shadow: 0 1px 12px rgba(0,0,0,0.5);
   }
   .hero-photo-lede{
-    color: rgba(255,255,255,0.88);
+    color: rgba(255,255,255,0.92);
     margin-top: 14px;
     max-width: 56ch;
+    text-shadow: 0 1px 10px rgba(0,0,0,0.45);
   }
   .btn-ghost-photo{
     border-color: #FFFFFF;
@@ -298,8 +305,9 @@
   }
   .btn-ghost-photo:hover{ background: rgba(255,255,255,0.14); }
   .hero-note-photo{
-    color: rgba(255,255,255,0.78);
+    color: rgba(255,255,255,0.85);
     margin-top: 22px;
+    text-shadow: 0 1px 10px rgba(0,0,0,0.45);
   }
   .hero-photo .wrap{
     display: block;
